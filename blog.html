@@ -1,0 +1,923 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b27">
+  <meta name="description" content="Discover luxury homes, apartments, villas and investment properties with EstateAura.">
+  <title>EstateAura | Find Your Dream Property</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="announcement">
+    <p><i class="bi bi-stars"></i> Discover exceptional properties. Find your next chapter.</p>
+    <a href="404.html">Explore properties <i class="bi bi-arrow-up-right"></i></a>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="nav-container">
+  
+<a href="index.html" class="logo">
+  <img
+    src="assets/image.webp"
+    alt="EstateAura Logo"
+    class="logo-image"
+  >
+</a>
+
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation" aria-expanded="false">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link ">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link active">Properties</a> 
+         <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link nav-contact">Log in <i class="bi bi-arrow-up-right"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- SECTION 01: HERO -->
+    <section class="properties-hero" id="propertiesHome">
+      <div class="properties-hero-image"></div>
+      <div class="properties-hero-overlay"></div>
+
+      <div class="container properties-hero-inner">
+        <div class="hero-copy" data-aos="fade-up">
+          <span class="eyebrow light-eyebrow">
+            <span class="eyebrow-dot"></span>
+            THE ART OF FINDING HOME
+          </span>
+
+          <h1>
+            Find a place
+            <span>to call your own.</span>
+          </h1>
+
+          <p>
+            Explore thoughtfully selected homes, contemporary apartments,
+            and distinctive properties for your next chapter.
+          </p>
+
+          <div class="hero-actions">
+            <a href="404.html" class="btn btn-gold">
+              Find Your Property <i class="bi bi-arrow-down-right"></i>
+            </a>
+            <a href="404.html" class="hero-text-link">
+              Discover featured homes <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-side-label" data-aos="fade-left" data-aos-delay="200">
+          <i class="bi bi-house-heart"></i>
+          <span>Good spaces.<br>Better beginnings.</span>
+        </div>
+
+        <div class="hero-bottom">
+          <span>01 / PROPERTY COLLECTION</span>
+          <span>HOMES · VILLAS · APARTMENTS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: PROPERTY SEARCH -->
+    <section class="search-section" id="propertySearch">
+      <div class="container">
+        <div class="search-panel" data-aos="fade-up">
+          <div class="search-heading">
+            <span class="search-symbol"><i class="bi bi-sliders"></i></span>
+            <div>
+              <span class="mini-label">YOUR SEARCH STARTS HERE</span>
+              <h2>Find your kind of place.</h2>
+            </div>
+          </div>
+
+          <form class="search-form" id="propertySearchForm">
+            <div class="search-field">
+              <label for="locationInput">Location</label>
+              <div class="field-control">
+                <i class="bi bi-geo-alt"></i>
+                <input type="search" id="locationInput"
+                  placeholder="Try Hyderabad">
+              </div>
+            </div>
+
+            <div class="search-field">
+              <label for="typeFilter">Property type</label>
+              <div class="field-control">
+                <i class="bi bi-buildings"></i>
+                <select id="typeFilter">
+                  <option value="all">All property types</option>
+                  <option value="villa">Villas</option>
+                  <option value="apartment">Apartments</option>
+                  <option value="house">Houses</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="search-field">
+              <label for="budgetFilter">Maximum budget</label>
+              <div class="field-control">
+                <i class="bi bi-currency-rupee"></i>
+                <select id="budgetFilter">
+                  <option value="all">Any budget</option>
+                  <option value="50">Up to ₹50 lakh</option>
+                  <option value="100">Up to ₹1 crore</option>
+                  <option value="200">Up to ₹2 crore</option>
+                  <option value="500">Up to ₹5 crore</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn btn-green search-button" type="submit">
+              <i class="bi bi-search"></i> Search
+            </button>
+          </form>
+
+          <p class="search-feedback" id="searchFeedback" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: FEATURED PROPERTY -->
+    <section class="featured-section section" id="featuredProperties">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              A CLOSER LOOK
+            </span>
+            <h2>Featured <span class="serif-accent">properties.</span></h2>
+          </div>
+          <a href="404.html" class="text-link">
+            View all properties <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <article class="featured-property" data-aos="fade-up">
+          <div class="featured-image">
+            <img
+              src="assets/image1.webp"
+              alt="Contemporary luxury residence with garden and spacious outdoor area"
+              loading="lazy">
+
+            <span class="property-badge">FEATURED HOME</span>
+            <span class="featured-image-caption">
+              <i class="bi bi-camera"></i> Architecture &amp; living
+            </span>
+          </div>
+
+          <div class="featured-info">
+            <span class="mini-label">A SPACE TO EXPERIENCE</span>
+            <h3>Modern Living, Naturally.</h3>
+
+            <p class="featured-location">
+              <i class="bi bi-geo-alt"></i> Hyderabad, India
+            </p>
+
+            <p>
+              An illustrative showcase of contemporary architecture,
+              open living areas, and a thoughtful connection to nature.
+            </p>
+
+            <div class="featured-specs">
+              <span><i class="bi bi-door-open"></i> Spacious layout</span>
+              <span><i class="bi bi-tree"></i> Garden setting</span>
+              <span><i class="bi bi-brightness-high"></i> Natural light</span>
+            </div>
+
+            <div class="featured-bottom">
+              <div>
+                <span class="mini-label">SAMPLE LISTING</span>
+                <strong>Price on request</strong>
+              </div>
+              <a href="404.html" class="round-arrow"
+                aria-label="Ask about the featured property">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 04: PROPERTY CATEGORIES -->
+    <section class="categories-section section" id="propertyCategories">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              EXPLORE BY STYLE
+            </span>
+            <h2>Spaces for every <span class="serif-accent">story.</span></h2>
+          </div>
+          <p>Choose the kind of property that fits the way you want to live.</p>
+        </div>
+
+        <div class="category-grid">
+          <a href="404.html" class="category-card category-villa"
+            data-category="villa" data-aos="fade-up">
+            <img
+              src="assets/image17.webp"
+              alt="Luxury villa surrounded by landscaping"
+              loading="lazy">
+            <span class="category-overlay"></span>
+            <span class="category-number">01</span>
+            <span class="category-content">
+              <small>PRIVATE LIVING</small>
+              <strong>Villas</strong>
+              <span>Explore villas <i class="bi bi-arrow-up-right"></i></span>
+            </span>
+          </a>
+
+          <a href="404.html" class="category-card category-apartment"
+            data-category="apartment" data-aos="fade-up" data-aos-delay="120">
+            <img
+              src="assets/image18.webp"
+              alt="Elegant apartment interior with modern furniture"
+              loading="lazy">
+            <span class="category-overlay"></span>
+            <span class="category-number">02</span>
+            <span class="category-content">
+              <small>MODERN COMFORT</small>
+              <strong>Apartments</strong>
+              <span>Explore apartments <i class="bi bi-arrow-up-right"></i></span>
+            </span>
+          </a>
+
+          <a href="404.html" class="category-card category-house"
+            data-category="house" data-aos="fade-up" data-aos-delay="240">
+            <img
+              src="assets/image26.webp"
+              alt="Contemporary family house with garden"
+              loading="lazy">
+            <span class="category-overlay"></span>
+            <span class="category-number">03</span>
+            <span class="category-content">
+              <small>ROOM TO GROW</small>
+              <strong>Family Homes</strong>
+              <span>Explore houses <i class="bi bi-arrow-up-right"></i></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: ALL PROPERTIES -->
+    <section class="listing-section section" id="allProperties">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              FIND YOUR MATCH
+            </span>
+            <h2>Explore the <span class="serif-accent">collection.</span></h2>
+          </div>
+          <p>Filter the sample listings by type, location, and budget.</p>
+        </div>
+
+        <div class="listing-toolbar" data-aos="fade-up">
+          <div class="filter-tabs" role="group" aria-label="Filter properties">
+            <button class="filter-btn active" type="button" data-filter="all"
+              aria-pressed="true">All</button>
+            <button class="filter-btn" type="button" data-filter="villa"
+              aria-pressed="false">Villas</button>
+            <button class="filter-btn" type="button" data-filter="apartment"
+              aria-pressed="false">Apartments</button>
+            <button class="filter-btn" type="button" data-filter="house"
+              aria-pressed="false">Houses</button>
+          </div>
+
+          <label class="sort-control" for="sortProperties">
+            <span>Sort by</span>
+            <select id="sortProperties">
+              <option value="default">Featured</option>
+              <option value="low">Price: low to high</option>
+              <option value="high">Price: high to low</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="property-grid" id="propertyGrid">
+
+          <!-- PROPERTY 1 -->
+          <article class="property-card" data-type="villa"
+            data-price="180" data-location="hyderabad">
+            <div class="property-image">
+              <img
+                src="assets/image5.webp"
+                alt="Modern villa with pool and landscaped surroundings"
+                loading="lazy">
+              <span class="property-badge">VILLA</span>
+              <button class="favorite-btn" type="button"
+                aria-label="Add Modern Garden Villa to favorites"
+                aria-pressed="false">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+            <div class="property-info">
+              <span class="property-type">CONTEMPORARY RESIDENCE</span>
+              <h3>Modern Garden Villa</h3>
+              <p class="property-location">
+                <i class="bi bi-geo-alt"></i> Hyderabad
+              </p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> 4 Beds</span>
+                <span><i class="bi bi-droplet"></i> 3 Baths</span>
+                <span><i class="bi bi-aspect-ratio"></i> 2,800 sq.ft.</span>
+              </div>
+              <div class="property-bottom">
+                <div><small>Illustrative price</small><strong>₹1.8 Cr</strong></div>
+                <a href="404.html" class="property-arrow"
+                  aria-label="Enquire about Modern Garden Villa">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROPERTY 2 -->
+          <article class="property-card" data-type="apartment"
+            data-price="75" data-location="hyderabad">
+            <div class="property-image">
+              <img
+                src="assets/image7.webp"
+                alt="Premium apartment living room with modern interior"
+                loading="lazy">
+              <span class="property-badge badge-light">APARTMENT</span>
+              <button class="favorite-btn" type="button"
+                aria-label="Add Skyline Apartment to favorites"
+                aria-pressed="false">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+            <div class="property-info">
+              <span class="property-type">CITY LIVING</span>
+              <h3>Skyline Apartment</h3>
+              <p class="property-location">
+                <i class="bi bi-geo-alt"></i> Hyderabad
+              </p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> 3 Beds</span>
+                <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                <span><i class="bi bi-aspect-ratio"></i> 1,450 sq.ft.</span>
+              </div>
+              <div class="property-bottom">
+                <div><small>Illustrative price</small><strong>₹75 Lakh</strong></div>
+                <a href="404.html" class="property-arrow"
+                  aria-label="Enquire about Skyline Apartment">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROPERTY 3 -->
+          <article class="property-card" data-type="house"
+            data-price="95" data-location="vijayawada">
+            <div class="property-image">
+              <img
+                src="assets/image8.webp"
+                alt="Contemporary detached family house"
+                loading="lazy">
+              <span class="property-badge">HOUSE</span>
+              <button class="favorite-btn" type="button"
+                aria-label="Add Garden Family House to favorites"
+                aria-pressed="false">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+            <div class="property-info">
+              <span class="property-type">FAMILY HOME</span>
+              <h3>Garden Family House</h3>
+              <p class="property-location">
+                <i class="bi bi-geo-alt"></i> Vijayawada
+              </p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> 3 Beds</span>
+                <span><i class="bi bi-droplet"></i> 3 Baths</span>
+                <span><i class="bi bi-aspect-ratio"></i> 1,900 sq.ft.</span>
+              </div>
+              <div class="property-bottom">
+                <div><small>Illustrative price</small><strong>₹95 Lakh</strong></div>
+                <a href="404.html" class="property-arrow"
+                  aria-label="Enquire about Garden Family House">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROPERTY 4 -->
+          <article class="property-card" data-type="villa"
+            data-price="250" data-location="hyderabad">
+            <div class="property-image">
+              <img
+                src="assets/image9.webp"
+                alt="High-end modern villa with expansive windows"
+                loading="lazy">
+              <span class="property-badge">VILLA</span>
+              <button class="favorite-btn" type="button"
+                aria-label="Add Aura Signature Villa to favorites"
+                aria-pressed="false">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+            <div class="property-info">
+              <span class="property-type">SIGNATURE COLLECTION</span>
+              <h3>Aura Signature Villa</h3>
+              <p class="property-location">
+                <i class="bi bi-geo-alt"></i> Hyderabad
+              </p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> 5 Beds</span>
+                <span><i class="bi bi-droplet"></i> 4 Baths</span>
+                <span><i class="bi bi-aspect-ratio"></i> 3,600 sq.ft.</span>
+              </div>
+              <div class="property-bottom">
+                <div><small>Illustrative price</small><strong>₹2.5 Cr</strong></div>
+                <a href="404.html" class="property-arrow"
+                  aria-label="Enquire about Aura Signature Villa">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROPERTY 5 -->
+          <article class="property-card" data-type="apartment"
+            data-price="48" data-location="vijayawada">
+            <div class="property-image">
+              <img
+                src="assets/image4.webp"
+                alt="Warm and modern apartment interior"
+                loading="lazy">
+              <span class="property-badge badge-light">APARTMENT</span>
+              <button class="favorite-btn" type="button"
+                aria-label="Add Urban Nest Apartment to favorites"
+                aria-pressed="false">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+            <div class="property-info">
+              <span class="property-type">URBAN COMFORT</span>
+              <h3>Urban Nest Apartment</h3>
+              <p class="property-location">
+                <i class="bi bi-geo-alt"></i> Vijayawada
+              </p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> 2 Beds</span>
+                <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                <span><i class="bi bi-aspect-ratio"></i> 1,050 sq.ft.</span>
+              </div>
+              <div class="property-bottom">
+                <div><small>Illustrative price</small><strong>₹48 Lakh</strong></div>
+                <a href="404.html" class="property-arrow"
+                  aria-label="Enquire about Urban Nest Apartment">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROPERTY 6 -->
+          <article class="property-card" data-type="house"
+            data-price="65" data-location="visakhapatnam">
+            <div class="property-image">
+              <img
+                src="assets/image12.webp"
+                alt="Stylish contemporary home with inviting living space"
+                loading="lazy">
+              <span class="property-badge">HOUSE</span>
+              <button class="favorite-btn" type="button"
+                aria-label="Add Coastal Living House to favorites"
+                aria-pressed="false">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+            <div class="property-info">
+              <span class="property-type">EASY LIVING</span>
+              <h3>Coastal Living House</h3>
+              <p class="property-location">
+                <i class="bi bi-geo-alt"></i> Visakhapatnam
+              </p>
+              <div class="property-features">
+                <span><i class="bi bi-door-open"></i> 3 Beds</span>
+                <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                <span><i class="bi bi-aspect-ratio"></i> 1,600 sq.ft.</span>
+              </div>
+              <div class="property-bottom">
+                <div><small>Illustrative price</small><strong>₹65 Lakh</strong></div>
+                <a href="404.html" class="property-arrow"
+                  aria-label="Enquire about Coastal Living House">
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <i class="bi bi-house-exclamation"></i>
+          <h3>No matching properties found</h3>
+          <p>Try another location, property type, or budget.</p>
+          <button class="btn btn-green" type="button" id="showAllBtn">
+            Clear Filters
+          </button>
+        </div>
+
+        <p class="listing-note">
+          Sample listings and prices are for demonstration only and are
+          not verified offers for sale.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 06: LUXURY BANNER -->
+    <section class="luxury-section" id="luxuryLiving">
+      <div class="luxury-image"></div>
+      <div class="luxury-overlay"></div>
+
+      <div class="container luxury-content" data-aos="fade-right">
+        <span class="eyebrow light-eyebrow">
+          <span class="eyebrow-dot"></span>
+          THE EXTRAORDINARY, EVERY DAY
+        </span>
+
+        <h2>
+          A little more room
+          <span>for living beautifully.</span>
+        </h2>
+
+        <p>
+          Discover inspiring architecture, considered interiors,
+          and spaces designed around the way you want to live.
+        </p>
+
+        <a href="404.html" class="btn btn-gold">
+          Discover the Collection <i class="bi bi-arrow-up-right"></i>
+        </a>
+      </div>
+
+      <span class="luxury-caption">DESIGN / SPACE / POSSIBILITY</span>
+    </section>
+
+    <!-- SECTION 07: PROPERTY SERVICES -->
+    <section class="services-section section" id="propertyServices">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              MORE THAN A LISTING
+            </span>
+            <h2>Support for your <span class="serif-accent">next move.</span></h2>
+          </div>
+          <p>Explore the different ways our marketplace concept can support your property journey.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card" data-aos="fade-up">
+            <span class="service-number">01</span>
+            <i class="bi bi-search service-icon"></i>
+            <h3>Property Discovery</h3>
+            <p>
+              Browse property types and narrow down options using
+              useful search and filter tools.
+            </p>
+            <a href="404.html">Start exploring <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+
+              <article class="service-card" data-aos="fade-up">
+            <span class="service-number">02</span>
+            <i class="bi bi-house-check service-icon"></i>
+            <h3>Buying Assistance</h3>
+            <p>
+              Organize your preferences and prepare the questions
+              you want to discuss before choosing a property.
+            </p>
+            <a href="404.html">Discuss your needs <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+
+          <article class="service-card" data-aos="fade-up" data-aos-delay="240">
+            <span class="service-number">03</span>
+            <i class="bi bi-key service-icon"></i>
+            <h3>Selling Enquiries</h3>
+            <p>
+              Use the contact section to express interest in listing
+              a property and discuss the next steps.
+            </p>
+            <a href="404.html">Get in touch <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 08: HOW IT WORKS -->
+    <section class="journey-section section" id="propertyJourney">
+      <div class="container journey-layout">
+        <div class="journey-intro" data-aos="fade-right">
+          <span class="eyebrow light-eyebrow">
+            <span class="eyebrow-dot"></span>
+            YOUR PROPERTY JOURNEY
+          </span>
+
+          <h2>
+            From first search
+            <span>to next chapter.</span>
+          </h2>
+
+          <p>
+            Take your time, compare your options, and make informed
+            decisions at every stage.
+          </p>
+
+          <a href="404.html" class="btn btn-gold">
+            Begin Your Search <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+
+        <div class="journey-steps">
+          <article class="journey-step" data-aos="fade-up">
+            <span class="step-number">01</span>
+            <div>
+              <h3>Explore</h3>
+              <p>Start with the property types and locations that interest you.</p>
+            </div>
+            <i class="bi bi-compass"></i>
+          </article>
+
+          <article class="journey-step" data-aos="fade-up" data-aos-delay="100">
+            <span class="step-number">02</span>
+            <div>
+              <h3>Compare</h3>
+              <p>Review prices, layouts, features, and your own requirements.</p>
+            </div>
+            <i class="bi bi-columns-gap"></i>
+          </article>
+
+          <article class="journey-step" data-aos="fade-up" data-aos-delay="200">
+            <span class="step-number">03</span>
+            <div>
+              <h3>Enquire</h3>
+              <p>Prepare your questions and connect to discuss a property.</p>
+            </div>
+            <i class="bi bi-chat-square-text"></i>
+          </article>
+
+          <article class="journey-step" data-aos="fade-up" data-aos-delay="300">
+            <span class="step-number">04</span>
+            <div>
+              <h3>Move Forward</h3>
+              <p>Verify the details and seek professional advice before committing.</p>
+            </div>
+            <i class="bi bi-arrow-up-right-circle"></i>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 09: CONTACT CTA -->
+    <section class="contact-cta-section section" id="contactProperties">
+      <div class="container">
+        <div class="contact-cta" data-aos="fade-up">
+          <div class="cta-decoration"><i class="bi bi-houses"></i></div>
+
+          <span class="eyebrow light-eyebrow">
+            <span class="eyebrow-dot"></span>
+            LET'S FIND YOUR PLACE
+          </span>
+
+          <h2>
+            Your next chapter
+            <span>starts with a conversation.</span>
+          </h2>
+
+          <p>
+            Have a property in mind? Reach out through the homepage
+            contact section to discuss your interests.
+          </p>
+
+          <div class="cta-actions">
+            <a href="404.html" class="btn btn-gold">
+              Contact EstateAura <i class="bi bi-arrow-up-right"></i>
+            </a>
+            <a href="404.html" class="btn btn-outline">
+              About Our Approach <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<!-- ESTATEAURA PREMIUM FOOTER -->
+<footer class="footer" id="footer">
+
+  <!-- TOP CTA BANNER -->
+  <div class="footer-cta container" data-aos="fade-up">
+    <div class="footer-cta-content">
+      <span class="footer-eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+      <h2>Ready to find your <span>place?</span></h2>
+      <p>Let's turn your property plans into something extraordinary.</p>
+    </div>
+
+    <a href="404.html" class="footer-cta-button">
+      Let's Talk
+      <i class="bi bi-arrow-up-right"></i>
+    </a>
+  </div>
+
+  <!-- MAIN FOOTER -->
+  <div class="container">
+
+    <div class="footer-main">
+
+      <!-- BRAND -->
+      <div class="footer-brand">
+
+        <a href="index.html" class="footer-logo">
+          <img
+            src="assets/image.webp"
+            alt="EstateAura Logo"
+            class="logo-image"
+          >
+         
+        </a>
+
+        <p class="footer-brand-description">
+          Thoughtfully found spaces.<br>
+          Beautifully lived stories.
+        </p>
+
+        <div class="footer-contact-mini">
+          <a href="mailto:hello@estateaura.example">
+            <i class="bi bi-envelope"></i>
+            hello@estateaura.example
+          </a>
+
+          <a href="contact.html">
+            <i class="bi bi-chat-square-text"></i>
+            Talk to our property team
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a href="404.html" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="404.html" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="404.html" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="404.html" aria-label="YouTube">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- EXPLORE -->
+      <div class="footer-links">
+        <h4>Explore EstateAura</h4>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Properties</a>
+        <a href="about.html">Our story</a>
+        <a href="services.html">Our services</a>
+        <a href="contact.html">Contact us</a>
+      </div>
+
+      <!-- PROPERTY TYPES -->
+      <div class="footer-links">
+        <h4>Find your space</h4>
+        <a href="404.html">Luxury villas</a>
+        <a href="404.html">City apartments</a>
+        <a href="404.html">Residential plots</a>
+        <a href="404.html">Commercial spaces</a>
+        <a href="404.html">Rental properties</a>
+      </div>
+
+      <!-- NEWSLETTER -->
+      <div class="footer-newsletter">
+
+        <span class="footer-newsletter-label">
+          THE STACKLY ESTATEAURA EDIT
+        </span>
+
+        <h4>A little inspiration, delivered.</h4>
+
+        <p>
+          Discover beautiful properties, fresh listings and ideas
+          for your next move.
+        </p>
+
+        <form id="newsletterForm" class="newsletter-form">
+          <label for="newsletterEmail" class="visually-hidden">
+            Your email address+
+          </label>
+
+          <input
+            type="email"
+            id="newsletterEmail"
+            name="email"
+            placeholder="Your email address"
+            aria-label="Your email address"
+            required
+          >
+
+          <button type="submit" aria-label="Subscribe">
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+        </form>
+
+        <p
+          id="newsletterMessage"
+          class="newsletter-message"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+        <div class="newsletter-note">
+          <i class="bi bi-shield-check"></i>
+          Thoughtful updates. No unnecessary noise.
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- SERVICE LOCATIONS -->
+    <div class="footer-locations">
+      <span class="footer-location-title">
+        <i class="bi bi-geo-alt"></i>
+        FIND US IN
+      </span>
+
+      <span class="location-tag">Hyderabad</span>
+      <span class="location-tag">Vijayawada</span>
+      <span class="location-tag">Visakhapatnam</span>
+    </div>
+
+    <!-- BOTTOM FOOTER -->
+    <div class="footer-bottom">
+
+      <p>
+        © <span id="currentYear"></span> Stackly.
+        Demo website for educational use.
+      </p>
+
+      <div class="footer-bottom-links">
+        <a href="404.html">Privacy</a>
+        <a href="404.html">Terms</a>
+        <a href="blog.html" class="back-to-top">
+          Back to top <i class="bi bi-arrow-up"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <p class="disclaimer">
+      Property listings, prices, statistics, portraits and testimonials
+      on this demo are illustrative. Verify all details before making
+      a real estate decision.
+    </p>
+
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/blog.js"></script>
+
+</body>
+</html>
